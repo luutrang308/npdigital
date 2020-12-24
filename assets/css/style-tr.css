@@ -55,6 +55,9 @@ a:hover {
 .element_menu ul > li .submenu li:hover a {
   color: #0CC0ED;
 }
+.element_menu ul > li .submenu li a {
+  padding: 10px 15px 10px 0;
+}
 .element_menu ul > li .submenu.form_search {
   left: -250px;
   width: 300px;
@@ -152,7 +155,7 @@ a:hover {
 
 .section_footer {
   background: #2c2c2c;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 .section_footer .row {
   display: flex;
@@ -169,6 +172,7 @@ a:hover {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 .section_footer .row .footer ul {
   padding: 0;
@@ -1120,14 +1124,14 @@ a:hover {
   text-align: center;
   float: left;
 }
-.product:hover > a:before {
-  top: 0;
+.product:hover > a span {
+  background: #47396c;
 }
 .product:hover h3 a {
-  color: #0CC0ED;
+  font-weight: bold;
 }
-.product:hover p img {
-  filter: contrast(0.5);
+.product:hover p .img_hover {
+  opacity: 1;
 }
 .product > a {
   width: 215px;
@@ -1141,16 +1145,17 @@ a:hover {
   box-sizing: border-box;
   margin: auto;
 }
-.product > a:before {
+.product > a span {
+  display: block;
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #ffffff30;
-  top: 100%;
-  left: 0;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 50%;
   transition: 0.5s;
-  z-index: 1;
 }
 .product > a > img {
   position: absolute;
@@ -1185,6 +1190,22 @@ a:hover {
   color: #555555;
   margin-right: 25px;
 }
+.product p a {
+  position: relative;
+}
+.product p .img_hover {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product p img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .banner_page {
   width: 100%;
@@ -1210,7 +1231,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1000;
+  z-index: 500;
   transform: translate(-50%, -50%);
   color: #fff;
   text-transform: uppercase;
@@ -1356,6 +1377,7 @@ a:hover {
 
 .element_upload {
   text-align: center;
+  margin-bottom: 30px;
 }
 .element_upload .upload_item {
   width: 300px;
@@ -2100,6 +2122,9 @@ a:hover {
 .element_detail_product tr td:nth-child(3), .element_detail_product tr td:nth-child(4), .element_detail_product tr td:nth-child(5), .element_detail_product tr td:nth-child(2) {
   border-bottom: 1px solid #7F8386;
 }
+.element_detail_product tr td:nth-child(4), .element_detail_product tr td:nth-child(5), .element_detail_product tr td:nth-child(3), .element_detail_product tr td:nth-child(1) {
+  padding-top: 70px;
+}
 .element_detail_product tr td p {
   font-family: Lato;
   font-style: normal;
@@ -2107,6 +2132,7 @@ a:hover {
   font-size: 16px;
   line-height: 128%;
   text-align: right;
+  margin: 0;
 }
 
 .list_contact_product {
@@ -2271,4 +2297,25 @@ input::-webkit-inner-spin-button {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
+}
+
+.li_search a {
+  padding-right: 0 !important;
+}
+
+.copyrighter {
+  width: 100%;
+  text-align: center;
+}
+.copyrighter p {
+  width: 100%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E0E0E0;
+  margin: 0;
+  padding: 15px 0;
+  border-top: 1px solid #ffffff38;
 }

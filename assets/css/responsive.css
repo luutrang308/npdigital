@@ -238,6 +238,9 @@
 
 /* max 768 */
 @media screen and (max-width: 991px) {
+  .copyrighter p {
+    border-top: none;
+  }
 
   .section_signin {
     padding: 15px;
@@ -722,6 +725,9 @@
   }
   .element_title_product {
     margin-bottom: 15px;
+  }
+  .element_detail_product tr td:nth-child(4), .element_detail_product tr td:nth-child(5), .element_detail_product tr td:nth-child(3), .element_detail_product tr td:nth-child(1) {
+    padding-top: 0;
   }
 }
 
