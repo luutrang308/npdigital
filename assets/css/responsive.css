@@ -41,17 +41,22 @@
   src: url(./../fonts/MTD-Simpletune.otf);
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .section_dangki .row .form_dangki p {
+    margin-bottom: 0;
+  }
   .section_dangki .row .form_dangki .check_form {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .section_dangki .row .form_dangki p {
-    margin-bottom: 0;
-  }
+  
   .section_dangki {
     padding-top: 30px;
   }
+}
+
+@media screen and (min-width: 1201px) {
+  
 }
 /* 1024 */
 

@@ -507,6 +507,9 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+.section_signin .row .form_singin .btn_signin:hover {
+  background: #009bc1;
+}
 .section_signin .row span {
   display: flex;
   width: 320px;
@@ -680,7 +683,6 @@ a:hover {
   text-align: center;
   color: #F2F2F2;
   margin-top: 20px;
-  margin-bottom: 15px;
 }
 .section_dangki .row .form_dangki .check_form input {
   width: 15px;
@@ -704,6 +706,9 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+.section_dangki .row .form_dangki .btn_signin:hover {
+  background: #009bc1;
+}
 .section_dangki .row .form_dangki p {
   font-family: Lato;
   font-style: normal;
@@ -714,7 +719,8 @@ a:hover {
   color: #FFFFFF;
   width: 100%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .close_btn {
@@ -1513,6 +1519,9 @@ a:hover {
   line-height: 22px;
   color: #FFFFFF;
 }
+.form_uploadfile form span .btn_send:hover {
+  background: #009bc1;
+}
 .form_uploadfile form .part_item {
   width: 48%;
 }
@@ -1615,6 +1624,7 @@ a:hover {
 }
 .element_tables table tr {
   border-bottom: 1px solid #80808052;
+  transition: 0.5s;
 }
 .element_tables table tr th {
   font-family: Lato;
@@ -1639,6 +1649,9 @@ a:hover {
   line-height: 128%;
   color: #555555;
   padding: 15px 17px;
+}
+.element_tables table tr:hover {
+  background: #79d4ea36;
 }
 .element_tables .table_2 tr th {
   text-align: center;
@@ -1891,6 +1904,9 @@ a:hover {
   line-height: 22px;
   color: #F2F2F2;
 }
+.form_contact form span .btn_send_contact:hover {
+  background: #009bc1;
+}
 
 .section_contact_form {
   padding: 50px 0 60px 0;
@@ -2053,6 +2069,9 @@ a:hover {
   height: 40px;
   color: #F2F2F2;
 }
+.element_detail_product .detail_product_item .item .btn_add:hover {
+  background: #009bc1;
+}
 .element_detail_product .detail_product_item .item .btn_remove {
   background: #B3B3B3;
   border-radius: 4px;
@@ -2065,6 +2084,9 @@ a:hover {
   color: #F2F2F2;
   width: 48%;
   height: 40px;
+}
+.element_detail_product .detail_product_item .item .btn_remove:hover {
+  background: #009bc1;
 }
 .element_detail_product .price_product p {
   font-family: Lato;
@@ -2128,11 +2150,18 @@ a:hover {
 .element_detail_product tr td p {
   font-family: Lato;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 128%;
-  text-align: right;
-  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #555555;
+}
+
+.tr_total td {
+  padding: 50px 0 !important;
+}
+.tr_total td p {
+  margin-bottom: 0;
 }
 
 .list_contact_product {
@@ -2167,6 +2196,9 @@ a:hover {
 }
 .list_contact_product .list_btn .btn {
   margin-right: 10px;
+}
+.list_contact_product .list_btn .btn:hover {
+  background: #009bc1;
 }
 .list_contact_product p {
   font-family: Lato;

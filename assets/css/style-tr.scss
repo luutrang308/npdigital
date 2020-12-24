@@ -552,6 +552,9 @@ a:hover {
 			    color: #F2F2F2;
 			    margin-bottom: 20px;
 			    margin-top: 10px;
+			    &:hover {
+					background: #009bc1;
+				}
 			}
 		}
 		span {
@@ -728,7 +731,6 @@ a:hover {
 				text-align: center;
 				color: #F2F2F2;
 				margin-top: 20px;
-				margin-bottom: 15px;
 				input {
 					width: 15px;
 					height: 15px;
@@ -751,6 +753,9 @@ a:hover {
 			    color: #F2F2F2;
 			    margin-bottom: 20px;
 			    margin-top: 10px;
+			    &:hover {
+					background: #009bc1;
+				}
 			}
 			p {
 				font-family: Lato;
@@ -762,7 +767,8 @@ a:hover {
 				color: #FFFFFF;
 				width: 100%;
 				margin: auto;
-				margin-bottom: 30px;
+				margin-bottom: 15px;
+				margin-top: 15px;
 			}
 		}
 	}
@@ -1580,6 +1586,9 @@ a:hover {
 			    font-size: 18px;
 			    line-height: 22px;
 			    color: #FFFFFF;
+			    &:hover {
+					background: #009bc1;
+				}
 		    }
 		}
 		.part_item {
@@ -1687,6 +1696,7 @@ a:hover {
 		margin-top: 40px;
 		tr {
 			border-bottom: 1px solid #80808052;
+			transition: 0.5s;
 			th {
 				font-family: Lato;
 				font-style: normal;
@@ -1711,6 +1721,9 @@ a:hover {
 				line-height: 128%;
 				color: #555555;
 				padding: 15px 17px;
+			}
+			&:hover {
+				background: #79d4ea36;
 			}
 		}
 	}
@@ -1964,6 +1977,9 @@ a:hover {
 				font-size: 18px;
 				line-height: 22px;
 				color: #F2F2F2;
+				&:hover {
+					background: #009bc1;
+				}
 			}
 		}
 	}
@@ -2133,6 +2149,9 @@ a:hover {
 				width: 48%;
 				height: 40px;
 				color: #F2F2F2;
+				&:hover {
+					background: #009bc1;
+				}
 			}
 			.btn_remove {
 				background: #B3B3B3;
@@ -2146,6 +2165,9 @@ a:hover {
 				color: #F2F2F2;
 				width: 48%;
 				height: 40px;
+				&:hover {
+					background: #009bc1;
+				}
 			}
 		}
 	}
@@ -2211,14 +2233,22 @@ a:hover {
 				padding-top: 70px;
 			}
 			p {
-				font-family: Lato;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 16px;
-				line-height: 128%;
-				text-align: right;
-				margin: 0;
+			    font-family: Lato;
+			    font-style: normal;
+			    font-weight: bold;
+			    font-size: 30px;
+			    line-height: 36px;
+			    text-align: center;
+			    color: #555555;
 			}
+		}
+	}
+}
+.tr_total {
+	td {
+		padding: 50px 0 !important;
+		p {
+			margin-bottom: 0;
 		}
 	}
 }
@@ -2255,6 +2285,9 @@ a:hover {
 		}
 		.btn {
 			margin-right: 10px;
+			&:hover {
+				background: #009bc1;
+			}
 		}
 	}
 	p {
