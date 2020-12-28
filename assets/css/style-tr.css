@@ -1991,6 +1991,10 @@ a:hover {
   border-radius: 4px;
   height: 40px;
   z-index: -1;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 128%;
+  color: #555555;
 }
 .element_detail_product .detail_product_item .item span input {
   border: 1px solid #C4C4C4;
@@ -2002,6 +2006,9 @@ a:hover {
 }
 .element_detail_product .detail_product_item .item span input:focus {
   outline: 0;
+}
+.element_detail_product .detail_product_item .item span input:hover {
+  cursor: pointer;
 }
 .element_detail_product .detail_product_item .item span select {
   border: 1px solid #C4C4C4;

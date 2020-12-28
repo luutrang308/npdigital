@@ -2063,6 +2063,10 @@ a:hover {
 				    border-radius: 4px;
 				    height: 40px;
 				    z-index: -1;
+				    font-weight: normal;
+				    font-size: 16px;
+				    line-height: 128%;
+				    color: #555555;
 				}
 				input {
 					border: 1px solid #C4C4C4;
@@ -2073,6 +2077,9 @@ a:hover {
 					width: 100%;
 					&:focus {
 						outline: 0;
+					}
+					&:hover {
+						cursor: pointer;
 					}
 				}
 				select {
