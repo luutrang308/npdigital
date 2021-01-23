@@ -2499,6 +2499,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .label_radio_btn label {
   font-weight: bold;
   font-family: Lato;
+  font-size: 16px;
 }
 .element_info_pro .form_info_pro .label_radio_btn label input {
   margin-right: 10px;
