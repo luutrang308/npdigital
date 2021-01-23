@@ -41,6 +41,7 @@
   src: url(./../fonts/MTD-Simpletune.otf);
 }
 
+/* 1366 */
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
   .section_dangki .row .form_dangki p {
     margin-bottom: 0;
@@ -53,6 +54,11 @@
   .section_dangki {
     padding-top: 30px;
   }
+  .product > a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -61,6 +67,11 @@
 /* 1024 */
 
 @media screen and (max-width: 1200px) and (min-width: 760px) {
+  .product > a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .box_item_img .img {
     width: 300px;
     height: 300px;
@@ -136,6 +147,14 @@
 
 /* 768 */
 @media screen and (max-width: 990px) and (min-width: 760px) {
+  .element_img_pro .slider_for {
+    height: 300px;
+  }
+  .product > a span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .element_img_pro .box_item {
     width: 250px;
     height: 250px;
@@ -742,7 +761,7 @@
     width: 100%;
   }
   .element_img_pro {
-    height: 350px;
+    height: 500px;
   }
   .element_img_pro .box_item {
     border: none;
@@ -758,6 +777,9 @@
   }
   .title_pro_detail {
     font-size: 20px;
+  }
+  .element_img_pro .slider_for {
+    height: 350px;
   }
 }
 

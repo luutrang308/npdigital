@@ -2366,19 +2366,49 @@ input::-webkit-inner-spin-button {
 }
 
 .element_img_pro {
-  width: 37%;
+  width: 49%;
   position: relative;
-  border: 1px solid #f0f0f0;
+}
+.element_img_pro .slider_for {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #80808021;
+}
+.element_img_pro .slider_for .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.element_img_pro .slider_for .slick-prev:before {
+  color: #2c2c2c;
+}
+.element_img_pro .slider_for .slick-next {
+  right: 0;
+  z-index: 1;
+}
+.element_img_pro .slider_for .slick-next:before {
+  color: #2c2c2c;
+}
+.element_img_pro .slider_nav {
+  margin-top: 15px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #80808021;
+}
+.element_img_pro .slider_nav .box_item {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border-right: 1px solid #80808021;
+}
+.element_img_pro .slider_nav .box_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .element_img_pro .box_item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  border: 1px solid #80808021;
 }
 .element_img_pro .box_item img {
   width: 100%;
@@ -2390,7 +2420,7 @@ input::-webkit-inner-spin-button {
 }
 
 .element_info_pro {
-  width: 60%;
+  width: 49%;
   padding-bottom: 30px;
 }
 .element_info_pro h2 {
@@ -2408,7 +2438,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .box_info_pro h3 {
   font-size: 20px;
   padding: 10px;
-  background-color: #2CB831;
+  background-color: #2c2c2c;
   border: 1px solid #E6E6E6;
   color: #EDEDED;
   margin-bottom: 0px;
@@ -2430,7 +2460,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .label_input span input {
   width: 100%;
   height: 40px;
-  border: 1px solid #2bb830;
+  border: 1px solid #2c2c2c;
   border-radius: 3px;
   padding: 0 15px;
 }
@@ -2440,7 +2470,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .label_input span select {
   width: 100%;
   height: 40px;
-  border: 1px solid #2bb830;
+  border: 1px solid #2c2c2c;
   border-radius: 3px;
   padding: 0 15px;
 }
@@ -2508,7 +2538,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .label_textarea span textarea {
   width: 100%;
   height: 40px;
-  border: 1px solid #2bb830;
+  border: 1px solid #2c2c2c;
   border-radius: 3px;
   padding: 15px;
   height: 100px;
@@ -2538,7 +2568,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .label_number span input {
   width: 100%;
   height: 40px;
-  border: 1px solid #2bb830;
+  border: 1px solid #2c2c2c;
   border-radius: 3px;
   padding: 0 15px;
 }
@@ -2548,12 +2578,18 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .btn_addtocart {
   border-radius: 3px;
   background-color: #0d3163;
-  color: #43e707;
+  color: #fff;
   border: none;
   transition: 0.2s;
 }
 .element_info_pro .form_info_pro .btn_addtocart:hover {
   background: #144790;
+}
+
+.label_number span input::-webkit-outer-spin-button,
+.label_number span input::-webkit-inner-spin-button {
+  opacity: 1;
+  z-index: 99;
 }
 
 .element_depcription {
@@ -2570,7 +2606,7 @@ input::-webkit-inner-spin-button {
   font-family: Lato;
   font-size: 24px;
   padding: 0 0 15px 0;
-  border-bottom: 3px solid #11b40c;
+  border-bottom: 3px solid #2c2c2c;
   margin-top: 30px;
 }
 
@@ -2583,10 +2619,34 @@ input::-webkit-inner-spin-button {
 .element_product_seeall .element_product .review_pro {
   font-family: Lato;
   font-size: 14px;
+  padding: 0 15px;
 }
 .element_product_seeall .element_product .review_pro img {
   max-width: 75px;
-  margin-right: 10px;
+  float: left;
+}
+
+.element_product_slider_detail .slick-prev, .element_product_slider_detail .slick-next {
+  transition: 0.5s;
+}
+.element_product_slider_detail .slick-prev:before, .element_product_slider_detail .slick-next:before {
+  transition: 0.5s;
+}
+.element_product_slider_detail:hover .slick-prev {
+  left: 0;
+  z-index: 1;
+  top: 34%;
+}
+.element_product_slider_detail:hover .slick-prev:before {
+  color: #2c2c2c;
+}
+.element_product_slider_detail:hover .slick-next {
+  right: 0;
+  z-index: 1;
+  top: 34%;
+}
+.element_product_slider_detail:hover .slick-next:before {
+  color: #2c2c2c;
 }
 
 .hidden {
