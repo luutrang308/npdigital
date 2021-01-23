@@ -59,6 +59,7 @@ $(document).ready(function() {
     ]
   });
 
+  /* 23 / 01 / 2021 create 13_chitietsp.html javascript */
   $('.slider_for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -104,7 +105,7 @@ $(document).ready(function() {
 });
 
 
-/**/
+/* 23 / 01 / 2021 create 13_chitietsp.html javascript */
 function executeAutomaticVisibility(name) {
   $("[name=" + name + "]:checked").each(function() {
     $("[showIfIdChecked=" + this.id + "]").show();
