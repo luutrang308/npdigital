@@ -58,9 +58,30 @@ $(document).ready(function() {
       }
     ]
   });
-
-  
-  
     
 });
 
+
+/**/
+function executeAutomaticVisibility(name) {
+  $("[name=" + name + "]:checked").each(function() {
+    $("[showIfIdChecked=" + this.id + "]").show();
+  });
+  $("[name=" + name + "]:not(:checked)").each(function() {
+    $("[showIfIdChecked=" + this.id + "]").hide();
+  });
+}
+
+$(document).ready(function() {
+  triggers = $("[showIfIdChecked]")
+    .map(function() {
+      return $("#" + $(this).attr("showIfIdChecked")).get()
+    })
+  $.unique(triggers);
+  triggers.each(function() {
+    executeAutomaticVisibility(this.name);
+    $(this).change(function() {
+      executeAutomaticVisibility(this.name);
+    });
+  });
+});

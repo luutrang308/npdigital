@@ -2449,3 +2449,243 @@ input::-webkit-inner-spin-button {
 		border-top: 1px solid #ffffff38;
 	}
 }
+
+.product_allinfo {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.element_img_pro {
+	width: 37%;
+	position: relative;
+	border: 1px solid #f0f0f0;
+	.box_item {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 350px;
+		height: 350px;
+		overflow: hidden;
+		border: 1px solid #80808021;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		iframe {
+			width: 100%;
+		}
+	}
+}
+.element_info_pro {
+	width: 60%;	
+	padding-bottom: 30px;
+	h2 {
+	    font-weight: 700;
+	    margin: 0 0 15px;
+	    line-height: 1.4;
+	    font-family: Lato;
+	}
+	.box_choose_npd {
+	    background-color: #F0F0F0;
+	    border: 1px solid #FFFFFF;
+	    margin-bottom: 20px;
+	    padding: 15px;
+	}
+	.form_info_pro {
+	    .box_info_pro {
+	    	h3 {
+	    		font-size: 20px;
+			    padding: 10px;
+			    background-color: #2CB831;
+			    border: 1px solid #E6E6E6;
+			    color: #EDEDED;
+			    margin-bottom: 0px;
+			    margin-top: 0;
+			    font-family: Lato;
+	    	}
+	    }
+	    .label_input {
+	    	padding-bottom: 15px;
+		    border-bottom: 1px solid #0000001c;
+		    margin-bottom: 15px;
+	    	p {
+	    		font-family: Lato;
+	    	}
+	    	span {
+	    		display: block;
+	    		width: 100%;
+	    		input {
+	    			width: 100%;
+	    			height: 40px;
+	    			border: 1px solid #2bb830;
+	    			border-radius: 3px;
+	    			padding: 0 15px;
+	    			&:focus {
+	    				outline: 0;
+	    			}
+	    		}
+	    		select {
+	    			width: 100%;
+	    			height: 40px;
+	    			border: 1px solid #2bb830;
+	    			border-radius: 3px;
+	    			padding: 0 15px;
+	    			&:focus {
+	    				outline: 0;
+	    			}
+	    		}
+	    	}
+	    }
+	    .label_radio_btn_child {
+	    	padding-top: 15px;
+		    border-top: 1px solid #0000001c;
+		    margin-top: 15px;
+		    /*background: #dadada;*/
+		    padding: 15px;
+		    p {
+	    		font-family: Lato;
+	    	}
+	    }
+	    .label_radio_btn {
+	    	padding-bottom: 15px;
+		    border-bottom: 1px solid #0000001c;
+		    margin-bottom: 15px;
+	    	p {
+	    		font-family: Lato;
+	    	}
+	    	label {
+	    		font-weight: bold;
+	    		font-family: Lato;
+	    		input {
+	    			margin-right: 10px;
+	    		}
+	    	}
+	    	span {
+	    		display: block;
+	    		width: 100%;
+	    	}
+	    	.radio_child {
+	    		margin-top: 15px;
+	    		padding-top: 10px;
+	    		border-top:  1px solid #0000001c;
+	    		/*background: #dadada;*/
+	    		padding: 15px;
+	    		p {
+	    			font-family: Lato;
+	    		}
+	    		.label_input {
+	    			border-bottom: none;
+	    			input {
+	    				height: auto;
+	    				padding: 8px 15px;
+	    			}
+	    		}
+	    	}
+	    }
+	    .label_textarea {
+	    	padding-bottom: 15px;
+		    border-bottom: 1px solid #0000001c;
+		    margin-bottom: 15px;
+	    	p {
+	    		font-family: Lato;
+	    	}
+	    	span {
+	    		display: block;
+	    		width: 100%;
+	    		textarea {
+	    			width: 100%;
+	    			height: 40px;
+	    			border: 1px solid #2bb830;
+	    			border-radius: 3px;
+	    			padding: 15px;
+	    			height: 100px;
+	    			&:focus {
+	    				outline: 0;
+	    			}
+	    		}
+	    	}
+	    }
+	    .sumcount {
+	    	color: #0d3163;
+		    font-size: 1.875em;
+		    font-weight: 700;
+		    font-family: Lato;
+	    }
+	    .label_number {
+	    	padding-bottom: 15px;
+		    margin-bottom: 15px;
+		    margin-top: 30px;
+	    	p {
+	    		font-family: Lato;
+	    		font-weight: bold;
+	    	}
+	    	span {
+	    		display: block;
+	    		width: 100%;
+	    		input {
+	    			width: 100%;
+	    			height: 40px;
+	    			border: 1px solid #2bb830;
+	    			border-radius: 3px;
+	    			padding: 0 15px;
+	    			&:focus {
+	    				outline: 0;
+	    			}
+	    		}
+	    	}
+	    }
+	    .btn_addtocart {
+	    	border-radius: 3px;
+		    background-color: #0d3163;
+		    color: #43e707;
+		    border: none;
+		    transition: 0.2s;
+		    &:hover {
+		    	background: #144790;
+		    }
+	    }
+	}
+}
+.element_depcription {
+	width: 100%;
+	p {
+		font-family: Lato;
+		font-weight: normal;
+		font-size: 16px;
+	}
+}
+.title_pro_detail {
+	width: 100%;
+	font-family: Lato;
+	font-size: 24px;
+	padding: 0 0 15px 0;
+	border-bottom: 3px solid #11b40c;
+	margin-top: 30px;
+}
+.element_product_seeall {
+	width: 100%;
+	.element_product {
+		margin-top: 25px;
+		.review_pro {
+			font-family: Lato;
+			font-size: 14px;
+			img {
+				max-width: 75px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: visible;
+  transition: all .5s ease-out;
+  opacity: 1;
+  color: red;
+}
