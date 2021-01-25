@@ -2373,11 +2373,13 @@ input::-webkit-inner-spin-button {
 .element_img_pro .slider_for {
   width: 100%;
   height: 500px;
-  border: 1px solid #80808021;
+  /*
+  border: 1px solid #80808021;*/
 }
 .element_img_pro .slider_for .slick-prev {
   left: 0;
   z-index: 1;
+  top: 58%;
 }
 .element_img_pro .slider_for .slick-prev:before {
   color: #2c2c2c;
@@ -2385,21 +2387,24 @@ input::-webkit-inner-spin-button {
 .element_img_pro .slider_for .slick-next {
   right: 0;
   z-index: 1;
+  top: 58%;
 }
 .element_img_pro .slider_for .slick-next:before {
   color: #2c2c2c;
 }
 .element_img_pro .slider_nav {
-  margin-top: 15px;
+  margin-top: 100px;
   width: 100%;
-  height: 100px;
-  border: 1px solid #80808021;
+}
+.element_img_pro .slider_nav .slick-slide {
+  margin: 10px;
 }
 .element_img_pro .slider_nav .box_item {
   width: 100%;
-  height: 100px;
+  height: 170px;
   overflow: hidden;
-  border-right: 1px solid #80808021;
+  border-right: 1px solid #2c2c2c;
+  margin: 10px;
 }
 .element_img_pro .slider_nav .box_item img {
   width: 100%;
@@ -2410,6 +2415,8 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border: 1px solid #2c2c2c;
+  border-radius: 50%;
 }
 .element_img_pro .box_item img {
   width: 100%;
@@ -2431,7 +2438,6 @@ input::-webkit-inner-spin-button {
   font-family: Lato;
 }
 .element_info_pro .box_choose_npd {
-  background-color: #F0F0F0;
   border: 1px solid #FFFFFF;
   margin-bottom: 20px;
   padding: 15px;
@@ -2439,7 +2445,7 @@ input::-webkit-inner-spin-button {
 .element_info_pro .form_info_pro .box_info_pro h3 {
   font-size: 20px;
   padding: 10px;
-  background-color: #2c2c2c;
+  background-color: #0CC0ED;
   border: 1px solid #E6E6E6;
   color: #EDEDED;
   margin-bottom: 0px;
@@ -2596,13 +2602,13 @@ input::-webkit-inner-spin-button {
 }
 .element_info_pro .form_info_pro .btn_addtocart {
   border-radius: 3px;
-  background-color: #0d3163;
+  background-color: #0CC0ED;
   color: #fff;
   border: none;
   transition: 0.2s;
 }
 .element_info_pro .form_info_pro .btn_addtocart:hover {
-  background: #144790;
+  background: #0090b4;
 }
 
 .label_number span input::-webkit-outer-spin-button,
